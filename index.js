@@ -8,7 +8,6 @@ const createpdf = require("./router/createpdf")
 const login = require("./router/login")
 const user = require("./router/user")
 const path = require("path")
-const serverless = require("serverless-http")
 
 require("dotenv").config()
 
