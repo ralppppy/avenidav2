@@ -7,6 +7,7 @@ const createwaterleveldata = require("./router/createwaterleveldata")
 const createpdf = require("./router/createpdf")
 const login = require("./router/login")
 const user = require("./router/user")
+const predict = require("./router/predict")
 const path = require("path")
 
 require("dotenv").config()
@@ -31,6 +32,7 @@ app.use("/api/get/waterleveldata", waterleveldata)
 app.use("/api/post/waterleveldata", createwaterleveldata)
 app.use("/api/pdf", createpdf)
 app.use("/api/post/login", login)
+app.use("/api/predict", predict)
 
 //USERS ROUTE
 app.use("/api/get/users", user)
